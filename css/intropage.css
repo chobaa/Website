@@ -1,0 +1,16 @@
+.intropage {
+    margin-top:50px;
+}
+
+.introtitleoutline {
+    width:100%;
+    margin-bottom:30px;
+}
+
+.introtitle {
+    font-weight:600;
+    border-radius:5px;
+    border:1px solid #130B46;
+    padding:10px 20px;
+    margin-left:40%;
+}

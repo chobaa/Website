@@ -13,35 +13,72 @@ body {
     padding-bottom:20px;
 }
 .header {
-    border-bottom: 1px solid;
-    border-color: rgba(0,0,0,0.1);
-    padding-top:25px;
-    padding-bottom:25px;
+   position:relative;
+   z-index:55; /* z-index를 최대로 줘서 페이지의 가장 위에 있게끔 함*/
+   display:flex;
+   height:100px;
+   align-items:center;
+   border-bottom:1px solid hsla(0,0%,71.8%,0.25);
+   background-color:transparent;
 }
-.navmenu {
-    display:inline-block;
-    padding-left:25%;
+.container-nav {
+    max-width: 1280px;
+    display:flex;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:center;
 }
-.navmenubox {
-    padding-right:20px;
+.nav-menu {
+    margin-left:5%;
+    display:flex;
+    width:50%; /*width를 nav-menu와 nav-buttonwrap에 50%씩 줘서 navigation을 가운데에 위치하도록 함*/
+    align-items:center;
+    position:static;
+}
+.nav-menu-brand {
+    margin-right:5vw;
+}
+.nav-menu-brand > img {
+    display:inline-block; /*img를 inline-block 처리하여 세로 줄맞추기*/
+    vertical-align:middle;
+}
+.navigation {
+    display:flex;
+    width:auto;
+    align-items:center;
+}
+.navigation > img {
+    width:1em;
+    height:1em;
+}
+.navlink {
+    padding:8px 24px;
+    font-size:14px;
+    line-height:24px;
     color:#130B46;
+    white-space:nowrap;
     text-decoration-line: none;
 }
-.textbutton {
-    margin-right:10%;
-    float:right;
-    font-size:15px;
-    padding:10px 28px;
-    border-radius:5px;
-    border: 1px solid #130B46;
-    background-color:white;
-    font-weight:600;
+.navlink > img {
+    height:20px;
+    width:20px;
 }
-/* .imagebutton {
-    width:40px;
-    height:40px;
-    background-color:#2F2A51;
-    margin-left:15px;
-    float:right;
-    border-radius:5px;
-} */
+.nav-buttonwrap {
+    margin-right:5%;
+    display:flex;
+    width:50%;
+    align-items:center;
+    justify-content: flex-end;
+    /*justify-content를 이용해 flex container 내에서도 오른쪽 끝에 위치하도록 함*/
+}
+.nav-button {
+    padding:8px 24px;
+    border-style: solid;
+    border-width:1.2px;
+    border-color:#130B46;
+    border-radius:8px;
+    color:#130B46;
+    background-color: transparent;
+    font-weight:500;
+}

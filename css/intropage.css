@@ -1,16 +1,131 @@
 .intropage {
-    margin-top:50px;
+    padding:80px 5% 60px;
 }
 
-.introtitleoutline {
-    width:100%;
-    margin-bottom:30px;
+.grid-header {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-row-gap:24px;
+    grid-column-gap:24px;
 }
 
-.introtitle {
+.grid-header-image {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-header-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-header-badge {
+    display:inline-flex;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    padding: 4px 12px;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1.2px;
+    border-color:#130b46;
+}
+
+.grid-header-badge > img {
+    max-width: 100%;
+    vertical-align: middle;
+    display:inline-block;
+    border: 0;
+    margin-right:8px;
+}
+
+.heading-detail-small {
+    font-family : sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.grid-header-content > h1 {
+    margin-top:0px;
+    margin-bottom:24px;
+    font-size:64px;
     font-weight:600;
-    border-radius:5px;
-    border:1px solid #130B46;
-    padding:10px 20px;
-    margin-left:40%;
+    line-height: 72px;
+    letter-spacing: -0.03em;
+    color:#130b46;
+}
+
+.grid-header-features {
+    display:grid;
+    margin-top:24px;
+    grid-column-gap: 16px;
+    grid-row-gap:16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.check-wrapper {
+    display:flex;
+    align-items: center;
+}
+
+.check-wrapper > img {
+    margin-right:8px;
+    align-items:center;
+}
+
+.grid-hero {
+    max-width:1840px;
+    display:grid;
+    margin-top:64px;
+    margin-right: auto;
+    margin-left: auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.hero-block-01 {
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #fff7d6;
+}
+
+.hero-block-01 > img {
+    max-width : 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.hero-block-02 {
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #ffded6;
+}
+
+.hero-block-02 > img {
+    max-width : 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.hero-block-03 {
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #e7d6ff;
+}
+
+.hero-block-03 > img {
+    max-width : 100%;
+    vertical-align: middle;
+    display: inline-block;
 }
